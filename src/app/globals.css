@@ -1,26 +1,142 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #050505;
+  --foreground: #ffffff;
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --font-sans: Arial, Helvetica, sans-serif;
+  --font-mono: "Courier New", Courier, monospace;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+* {
+  box-sizing: border-box;
+}
+
+html {
+  background: var(--background);
+  scroll-behavior: smooth;
 }
 
 body {
+  min-width: 320px;
   background: var(--background);
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
+}
+
+button,
+input,
+select,
+textarea {
+  font: inherit;
+}
+
+::selection {
+  background: #e50914;
+  color: #ffffff;
+}
+
+.netflix-container {
+  --netflix-page-gutter: clamp(24px, 6vw, 48px);
+  width: calc(100% - (var(--netflix-page-gutter) * 2));
+  margin-inline: auto;
+}
+
+@media (min-width: 960px) {
+  .netflix-container {
+    --netflix-page-gutter: clamp(96px, 9.6vw, 184px);
+    max-width: 1552px;
+  }
+}
+
+.membership-form {
+  display: grid;
+  width: 100%;
+  max-width: 735px;
+  gap: 12px;
+}
+
+.hero-section {
+  min-height: 660px;
+}
+
+.hero-media {
+  inset: 0;
+  overflow: hidden;
+}
+
+.hero-media img {
+  transform: scale(0.985);
+}
+
+.hero-content {
+  min-height: 660px;
+  padding-top: 132px;
+  padding-bottom: 76px;
+}
+
+.hero-curve {
+  height: 124px;
+  margin-top: -46px;
+}
+
+.hero-curve-line {
+  position: absolute;
+  left: 50%;
+  top: 0;
+  height: 124px;
+  width: 145%;
+  transform: translateX(-50%);
+  border: solid 4px transparent;
+  border-bottom: 0;
+  border-top-left-radius: 50% 100%;
+  border-top-right-radius: 50% 100%;
+  background:
+    radial-gradient(50% 500% at 50% -420%, rgba(64, 97, 231, 0.46) 80%, rgba(0, 0, 0, 0.1) 100%)
+      padding-box,
+    linear-gradient(#050505, #050505) padding-box,
+    linear-gradient(90deg, #210d16 16%, #b82869 34%, #e50914 50%, #b82869 66%, #210d16 84%)
+      border-box;
+  box-shadow:
+    inset 0 18px 42px rgba(2, 8, 35, 0.72),
+    0 -4px 18px rgba(229, 9, 20, 0.22);
+}
+
+@media (min-width: 640px) {
+  .membership-form {
+    grid-template-columns: minmax(0, 458px) 268px;
+    gap: 8px;
+    justify-content: center;
+  }
+
+  .membership-input,
+  .membership-submit {
+    min-height: 68px;
+  }
+
+  .membership-submit {
+    min-width: 268px;
+  }
+}
+
+@media (min-width: 960px) {
+  .hero-section {
+    min-height: min(840px, calc(100svh - 96px));
+  }
+
+  .hero-content {
+    min-height: min(840px, calc(100svh - 96px));
+    padding-top: clamp(132px, 14svh, 164px);
+    padding-bottom: clamp(72px, 8svh, 96px);
+  }
+}
+
+.rank-number {
+  color: rgba(0, 0, 0, 0.56);
+  -webkit-text-stroke: 2px rgba(255, 255, 255, 0.72);
+  text-shadow: 0 10px 22px rgba(0, 0, 0, 0.55);
 }
