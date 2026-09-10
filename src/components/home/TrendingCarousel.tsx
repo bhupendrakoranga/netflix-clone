@@ -99,7 +99,7 @@ export function TrendingCarousel({ items }: TrendingCarouselProps) {
       {canScrollBack ? (
         <button
           aria-label="Scroll trending titles back"
-          className="absolute top-1/2 left-0 hidden h-[148px] w-9 -translate-y-1/2 items-center justify-center rounded-md bg-[#1a1a1a]/90 text-white transition hover:bg-[#2a2a2a] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white sm:flex"
+          className="absolute top-1/2 -left-5 hidden h-[148px] w-9 -translate-y-1/2 items-center justify-center rounded-md bg-[#1a1a1a]/90 text-white transition hover:bg-[#2a2a2a] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white sm:flex"
           onClick={() => scrollByPage("back")}
           type="button"
         >
@@ -110,7 +110,7 @@ export function TrendingCarousel({ items }: TrendingCarouselProps) {
       {canScrollForward ? (
         <button
           aria-label="Scroll trending titles forward"
-          className="absolute top-1/2 right-0 flex h-[148px] w-9 -translate-y-1/2 items-center justify-center rounded-md bg-[#1a1a1a]/90 text-white transition hover:bg-[#2a2a2a] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
+          className="absolute top-1/2 -right-5 flex h-[148px] w-9 -translate-y-1/2 items-center justify-center rounded-md bg-[#1a1a1a]/90 text-white transition hover:bg-[#2a2a2a] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
           onClick={() => scrollByPage("forward")}
           type="button"
         >
