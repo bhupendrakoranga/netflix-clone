@@ -73,6 +73,23 @@ textarea {
   min-height: 660px;
 }
 
+.auth-container {
+  width: calc(100% - 48px);
+  max-width: 1188px;
+  margin-inline: auto;
+}
+
+.auth-login-surface {
+  background:
+    radial-gradient(
+      ellipse at 50% -8%,
+      rgba(122, 27, 31, 0.38) 0%,
+      rgba(55, 6, 8, 0.58) 34%,
+      transparent 68%
+    ),
+    linear-gradient(180deg, #451013 0%, #260406 38%, #0b0102 76%, #000000 100%);
+}
+
 .hero-media {
   inset: 0;
   overflow: hidden;

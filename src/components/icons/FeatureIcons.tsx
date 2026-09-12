@@ -123,7 +123,7 @@ export const TvIcon = (props: IconProps) => (
   </svg>
 );
 
-export const downloadIcon = (props: IconProps) => (
+export const DownloadIcon = (props: IconProps) => (
   <svg width="72" height="72" viewBox="0 0 72 72" fill="none" {...props}>
     <g id="download-core-small">
       <path
@@ -260,7 +260,7 @@ export const downloadIcon = (props: IconProps) => (
   </svg>
 );
 
-export const watchIcon = (props: IconProps) => (
+export const WatchIcon = (props: IconProps) => (
   <svg width="72" height="72" viewBox="0 0 72 72" fill="none" {...props}>
     <g id="telescope-core-small">
       <path
@@ -429,7 +429,7 @@ export const watchIcon = (props: IconProps) => (
   </svg>
 );
 
-export const profileKitIcon = (props: IconProps) => (
+export const ProfileKidsIcon = (props: IconProps) => (
   <svg width="72" height="72" viewBox="0 0 72 72" fill="none" {...props}>
     <g id="profiles-core-small">
       <path

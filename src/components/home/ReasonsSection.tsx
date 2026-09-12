@@ -1,12 +1,12 @@
 import { SectionShell } from "@/components/ui/SectionShell";
 import { reasons, type Reason } from "@/lib/content";
 import {
+  DownloadIcon,
+  ProfileKidsIcon,
   TvIcon,
-  downloadIcon as DownloadIcon,
-  profileKitIcon as ProfileKidsIcon,
-  watchIcon as WatchIcon,
+  WatchIcon,
   type IconProps,
-} from "@/lib/svgIcon";
+} from "@/components/icons/FeatureIcons";
 
 const iconMap: Record<Reason["icon"], (props: IconProps) => React.JSX.Element> = {
   devices: WatchIcon,
