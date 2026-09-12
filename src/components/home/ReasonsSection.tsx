@@ -25,10 +25,8 @@ function ReasonCard({ reason }: { reason: Reason }) {
         style={{ background: reason.background }}
       >
         <div className="relative z-10 max-w-[30ch] pb-24">
-          <h3 className="text-2xl leading-tight font-bold text-white lg:text-[28px]">
-            {reason.title}
-          </h3>
-          <p className="mt-6 text-base leading-[1.22] font-semibold text-white/70 sm:text-lg lg:text-xl">
+          <h3 className="text-2xl leading-[1.18] font-bold text-white">{reason.title}</h3>
+          <p className="mt-5 text-base leading-[1.35] font-normal text-white/70">
             {reason.description}
           </p>
         </div>

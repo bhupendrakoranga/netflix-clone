@@ -16,7 +16,7 @@ export function SiteHeader() {
             alt="Netflix"
             className="h-auto w-full"
             height={51}
-            priority
+            loading="eager"
             src="/images/netflix-wordmark.svg"
             width={188}
           />

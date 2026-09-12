@@ -1,5 +1,4 @@
 import Image from "next/image";
-
 import { SiteHeader } from "@/components/layout/SiteHeader";
 import { EmailSignup } from "@/components/ui/EmailSignup";
 
@@ -12,7 +11,7 @@ export function HeroSection() {
             alt=""
             className="object-cover object-center"
             fill
-            priority
+            preload
             sizes="100vw"
             src="/images/netflix-homepage-bg.jpg"
           />
