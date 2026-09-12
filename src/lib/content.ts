@@ -1,8 +1,8 @@
 export type TrendingItem = {
   rank: number;
   title: string;
-  category: string;
-  background: string;
+  category?: string;
+  background?: string;
   posterAlt?: string;
   posterSrc?: string;
 };
@@ -23,62 +23,62 @@ export const trendingItems: TrendingItem[] = [
   {
     rank: 1,
     title: "Dhamaal 4",
-    category: "Comedy",
-    background: "linear-gradient(145deg, #7f1d1d 0%, #f97316 48%, #111111 100%)",
+    posterSrc:
+      "https://occ-0-6245-3647.1.nflxso.net/dnm/api/v6/mAcAr9TxZIVbINe88xb3Teg5_OA/AAAABQXbgFgkrNy8pw_gF7fJSMb8nKhmX2MvnpAr7LDhGlTxmjUXFcZg3fVv0jQ8K5nda5of0tkl7hkGWfKha8JxIagiI8UgPJoBug4.webp?r=3d7",
   },
   {
     rank: 2,
     title: "Alpha",
-    category: "Action",
-    background: "linear-gradient(145deg, #0f172a 0%, #2563eb 48%, #111111 100%)",
+    posterSrc:
+      "https://occ-0-6245-3647.1.nflxso.net/dnm/api/v6/mAcAr9TxZIVbINe88xb3Teg5_OA/AAAABaZEyL4lBxMbJc6Mov0W6-fxDiCNnI0STN_Vx6ViMePxAAQGf5R3gQLUCEkz2YMSctqnX0q92jBVrJeK0uY79Ub862UN4hl1wNE.webp?r=dd2",
   },
   {
     rank: 3,
     title: "Operation Safed Sagar",
-    category: "Drama",
-    background: "linear-gradient(145deg, #312e81 0%, #be123c 48%, #111111 100%)",
+    posterSrc:
+      "https://occ-0-6245-3647.1.nflxso.net/dnm/api/v6/mAcAr9TxZIVbINe88xb3Teg5_OA/AAAABSwMP_RP4yykJh43expsqt9f9o1tQuoaPVgB_6t5wLQmTIFH0C7ou759TjdtLFRaD8a7ugZ-YjogjGN6baRmKUGfKSySB8Akfs8.webp?r=019",
   },
   {
     rank: 4,
     title: "Gandhari",
-    category: "Thriller",
-    background: "linear-gradient(145deg, #064e3b 0%, #14b8a6 48%, #111111 100%)",
+    posterSrc:
+      "https://occ-0-6245-3647.1.nflxso.net/dnm/api/v6/mAcAr9TxZIVbINe88xb3Teg5_OA/AAAABejSYC_DP_davWAspoYDdc5UiyuElbnN8BAPXUPNnMlaQv94EpDM7sz7W03xEvL_Zfik6GbYfm3jFSRgC_ziprEUyQPfKouLzbG9vFNtQ08fbKzKkM2vt8m6TJs_qbjpzYUz.webp?r=639",
   },
   {
     rank: 5,
     title: "Fauda",
-    category: "Series",
-    background: "linear-gradient(145deg, #1c1917 0%, #a16207 48%, #111111 100%)",
+    posterSrc:
+      "https://occ-0-6245-3647.1.nflxso.net/dnm/api/v6/mAcAr9TxZIVbINe88xb3Teg5_OA/AAAABfft58CudDGJ727KyF7dpwuPAUAX2piYLews-kNwjaZPvuzNceVJ0aF9NOgT9zso4snoelXa7Yz343bHuLEr61nQVEHIILp-vjIfx8JJ1WYtHUMh-ws4k7lRjoqDO3365_Z0.webp?r=254",
   },
   {
     rank: 6,
     title: "Korean Kanakaraju",
-    category: "Romance",
-    background: "linear-gradient(145deg, #831843 0%, #db2777 48%, #111111 100%)",
+    posterSrc:
+      "https://occ-0-6245-3647.1.nflxso.net/dnm/api/v6/mAcAr9TxZIVbINe88xb3Teg5_OA/AAAABdASUN6RmS_9Cz6RcM4PKxYy7dodzanPKLVynf3XovDr3AcakvtDLt5PVphbOEWfopc547BO194AXv3WsY4MT8efTOi8sjiEvY8.webp?r=873",
   },
   {
     rank: 7,
     title: "Cocktail 2",
-    category: "Rom-com",
-    background: "linear-gradient(145deg, #164e63 0%, #f59e0b 48%, #111111 100%)",
+    posterSrc:
+      "https://occ-0-6245-3647.1.nflxso.net/dnm/api/v6/mAcAr9TxZIVbINe88xb3Teg5_OA/AAAABVWi2wy6mosin5U_mItEw8Fd4Y7nnnIQSyKjapXqmpsP1C0fW8Ap9e23kNJ8DH2Gzm_XZmOO3wtbHO2uh9H1cr7V26BlVbiUq1WhNf3sYcrGAQ_9ApdAJ87kn8RPQnqnvkTp.webp?r=687",
   },
   {
     rank: 8,
     title: "Musafir Cafe",
-    category: "Feel good",
-    background: "linear-gradient(145deg, #14532d 0%, #84cc16 48%, #111111 100%)",
+    posterSrc:
+      "https://occ-0-6245-3647.1.nflxso.net/dnm/api/v6/mAcAr9TxZIVbINe88xb3Teg5_OA/AAAABZ_L6Hq4yCOUjtYQlH9jT6IG9nwLDgUAm05Yy8_7LJ93TJ_yg4Llc5pduntop2Y72vATfRR5v6a72JTT_TMahhmPpr9TdIehNu4.webp?r=227",
   },
   {
     rank: 9,
     title: "Gatta Kusthi 2",
-    category: "Sports",
-    background: "linear-gradient(145deg, #3b0764 0%, #9333ea 48%, #111111 100%)",
+    posterSrc:
+      "https://occ-0-6245-3647.1.nflxso.net/dnm/api/v6/mAcAr9TxZIVbINe88xb3Teg5_OA/AAAABf05Qw56C9HlqGzXEu7kjj8-mlqXFqR5iNQvWr3SXUy8cMe5d-bIVbJhPqiuDXQir8CmDeFBaeth9dlV0ZE6BwzpkzmRYiFjwrM.webp?r=374",
   },
   {
     rank: 10,
     title: "Peddi",
-    category: "Blockbuster",
-    background: "linear-gradient(145deg, #450a0a 0%, #dc2626 48%, #111111 100%)",
+    posterSrc:
+      "https://occ-0-6245-3647.1.nflxso.net/dnm/api/v6/mAcAr9TxZIVbINe88xb3Teg5_OA/AAAABRHEcpZrJWcGzHq1AkgW7B8aDNiXEqlU9JBHEwHiXFTEQ8fXNl14SJJMQJYMweSLASaAFxBjCZUrsnZ2DCoViO0dcfgJvky0pYY.webp?r=d8e",
   },
 ];
 

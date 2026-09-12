@@ -3,7 +3,7 @@ import type { ReactNode } from "react";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Netflix India Clone",
+  title: "Netflix India - Watch Shows Online, Watch Movies Online",
   description: "A Next.js and Tailwind CSS landing page clone inspired by Netflix India.",
 };
 
