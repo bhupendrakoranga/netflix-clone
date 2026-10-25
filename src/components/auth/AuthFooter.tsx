@@ -1,10 +1,16 @@
 import { LanguageSelect } from "@/components/ui/LanguageSelect";
 import { authFooterLinks } from "@/lib/authContent";
+import { cn } from "@/lib/utils";
 
-export function AuthFooter() {
+type AuthFooterProps = {
+  className?: string;
+  containerClassName?: string;
+};
+
+export function AuthFooter({ className, containerClassName }: AuthFooterProps) {
   return (
-    <footer className="border-t border-white/10 bg-[#161616] text-[#b3b3b3]">
-      <div className="auth-container py-11 sm:py-16">
+    <footer className={cn("border-t border-white/10 bg-[#161616] text-[#b3b3b3]", className)}>
+      <div className={cn("auth-container py-11 sm:py-16", containerClassName)}>
         <p className="text-base sm:text-lg">
           Questions? Call{" "}
           <a className="underline underline-offset-2 hover:text-white" href="tel:0008009191743">

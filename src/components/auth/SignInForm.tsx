@@ -1,6 +1,7 @@
 "use client";
 
 import { ChevronDown, CircleX } from "lucide-react";
+import Link from "next/link";
 import type { ChangeEvent, FormEvent } from "react";
 import { useId, useState } from "react";
 import { ValidationError } from "yup";
@@ -94,9 +95,9 @@ export function SignInForm() {
           <ChevronDown aria-hidden className="h-5 w-5 transition-transform group-open:rotate-180" />
         </summary>
         <div className="mt-4 space-y-3 text-sm text-[#b3b3b3]">
-          <a className="block underline underline-offset-2 hover:text-white" href="#">
-            Forgot email or phone number?
-          </a>
+          <Link className="block underline underline-offset-2 hover:text-white" href="/loginhelp">
+            Forgot email or mobile number?
+          </Link>
           <a className="block underline underline-offset-2 hover:text-white" href="#">
             Need more help?
           </a>
